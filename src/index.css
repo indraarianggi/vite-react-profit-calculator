@@ -3,5 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --brand: theme('colors.indigo.600')
+  --brand: theme('colors.indigo.600');
+}
+
+html[data-color="yellow"] {
+  --brand: theme('colors.yellow.600');
+}
+
+html[data-color="green"] {
+  --brand: theme('colors.green.600');
+}
+
+html[data-color="violet"] {
+  --brand: theme('colors.violet.600');
+}
+
+html[data-color="fuchsia"] {
+  --brand: theme('colors.fuchsia.600');
+}
+
+html[data-color="pink"] {
+  --brand: theme('colors.pink.600');
+}
+
+@layer components {
+  .theme-color {
+    @apply rounded-full h-5 w-5 cursor-pointer;
+  }
+
+  .theme-color.active {
+    @apply ring-4 ring-gray-200 dark:ring-gray-800;
+  }
 }

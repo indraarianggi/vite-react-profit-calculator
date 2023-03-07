@@ -1,4 +1,4 @@
-import { ThemeSwitcher } from "@/components";
+import { ThemeColorSwitcher, ThemeSwitcher } from "@/components";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
           <ThemeSwitcher />
 
           <div className="mx-auto max-w-2xl sm:text-center">
-            {/* TODO: Theme Color Switcher */}
+            <ThemeColorSwitcher />
 
             <h2 className="text-brand text-3xl font-bold tracking-tighter sm:text-4xl text-center">
               Profit Margin Calculator
