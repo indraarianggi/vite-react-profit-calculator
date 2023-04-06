@@ -34,4 +34,24 @@ html[data-color="pink"] {
   .theme-color.active {
     @apply ring-4 ring-gray-200 dark:ring-gray-800;
   }
+
+  .chip {
+    @apply text-gray-100 bg-gray-300 dark:bg-slate-900 text-sm font-medium mr-2 px-4 py-1 rounded cursor-pointer;
+  }
+
+  .chip.active {
+    @apply bg-brand text-white;
+  }
+
+  .btn {
+    @apply w-full px-10 py-4 text-base font-medium text-center transition duration-500 ease-in-out transform rounded-lg focus:outline-none focus:ring-4;
+  }
+
+  .btn-primary {
+    @apply text-white bg-brand hover:bg-slate-900 focus:ring-gray-200 dark:focus:ring-gray-700;
+  }
+
+  .btn-secondary {
+    @apply bg-white dark:bg-slate-900 text-gray-900 dark:text-white dark:border-gray-600 dark:hover:bg-slate-800 border border-gray-200 hover:bg-gray-100 focus:ring-gray-200 dark:focus:ring-gray-700;
+  }
 }

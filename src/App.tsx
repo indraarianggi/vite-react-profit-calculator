@@ -1,4 +1,9 @@
-import { ThemeColorSwitcher, ThemeSwitcher } from "@/components";
+import {
+  Calculator,
+  FAQ,
+  ThemeColorSwitcher,
+  ThemeSwitcher,
+} from "@/components";
 
 function App() {
   return (
@@ -19,7 +24,9 @@ function App() {
             </p>
           </div>
 
-          {/* TODO: Calculator */}
+          <Calculator />
+
+          <FAQ />
         </div>
       </div>
     </main>
